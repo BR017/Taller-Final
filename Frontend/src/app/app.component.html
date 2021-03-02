@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a class="nav-item nav-link" routerLink="/autos/list" routerLinkActive="active">Autos</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="app-container bg-light"> 
+  <router-outlet></router-outlet>
+</div>
+
+<div class="text-center mt-4">
+  <p>
+      <a href="https://jasonwatmore.com/post/2020/12/15/angular-11-crud-example-with-reactive-forms" target="_top">Angular 11 - CRUD Ejemplo con formularios Reactivos</a>
+  </p>
+  <p>
+      <a href="#" target="_top">Hechicero.com</a>
+  </p>
+</div>

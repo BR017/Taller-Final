@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Editar Auto</h1>
+    <form (ngSubmit)="actualizarAuto()" ngNativeValidate>
+        <div class="form-row">
+            <div class="form-group col-5">
+                <label>Marca</label>
+                <input type="text" class="form-control" [(ngModel)]='editauto.marca' [ngModelOptions]="{standalone: true}" required />
+            </div>
+            <div class="form-group col-5">
+                <label>Modelo</label>
+                <input type="number" class="form-control" [(ngModel)]='editauto.modelo' [ngModelOptions]="{standalone: true}" required />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-5">
+                <label>Color</label>
+                <input type="text" class="form-control" [(ngModel)]='editauto.color' [ngModelOptions]="{standalone: true}" required />
+            </div>
+            <div class="form-group col-5">
+                <label>Precio</label>
+                <input type="number" class="form-control" [(ngModel)]='editauto.precio' [ngModelOptions]="{standalone: true}" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+                Guardar
+            </button>
+            <a routerLink="/autos/list" class="btn btn-link">Cancelar</a>
+        </div>
+    </form>
+</div>

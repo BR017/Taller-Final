@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Crear Auto</h1>
+    <form (ngSubmit)="registrar()" ngNativeValidate>
+        <div class="form-row">
+            <div class="form-group col-5">
+                <label>Marca</label>
+                <input type="text" class="form-control" [(ngModel)]='nuevoAuto.marca' [ngModelOptions]="{standalone: true}" required />
+            </div>
+            <div class="form-group col-5">
+                <label>Modelo</label>
+                <input type="text" class="form-control" [(ngModel)]='nuevoAuto.modelo' [ngModelOptions]="{standalone: true}" required />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-5">
+                <label>Color</label>
+                <input type="text" class="form-control" [(ngModel)]='nuevoAuto.color' [ngModelOptions]="{standalone: true}" required />
+            </div>
+            <div class="form-group col-5">
+                <label>Precio</label>
+                <input type="text" class="form-control" [(ngModel)]='nuevoAuto.precio' [ngModelOptions]="{standalone: true}" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+                Guardar
+            </button>
+            <a routerLink="/autos/list" class="btn btn-link">Cancelar</a>
+        </div>
+    </form>
+</div>
